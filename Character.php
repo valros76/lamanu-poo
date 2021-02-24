@@ -46,7 +46,7 @@ class Stuff{
    }
 
    public function view(string $param) : string{
-      return (string) $param;
+      return $param;
    }
 
 }
@@ -65,7 +65,7 @@ class Character extends Stuff{
    }
 
    public function chat(string $charac) : string{
-      return (string) 'Hello '.$charac;
+      return 'Hello '.$charac;
    }
 }
 
@@ -73,10 +73,10 @@ class Orc extends Character{
    protected int $_health = 1000;
 
    public function useHammer() : bool{
-      return (bool) true;
+      return true;
    }
 
    public function useSword() : bool{
-      return (bool) false;
+      return false;
    }
 }
